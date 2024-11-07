@@ -3,29 +3,22 @@
 #Purpose: creates a circle using *
 #Parameters: none
 #Return: none
-def ASCII_circle():
-    print("\n     ****\n    *      *\n   *        *\n   *        *\n    *      *\n      ****")
+def ascii_circle():
+    print("\n      ****\n    *      *\n   *        *\n   *        *\n    *      *\n      ****")
 
 
 
 #Purpose: creates a set of lines using *
 #Parameters: none
 #Return: none
-def ASCII_lines():
-    print("\n    |     |     |\n    |     |     |\n    |     |     |")
-
-#Purpose: creates an emoji using *
-#Parameters: none
-#Return: none
-
-def ASCII_emoji():
-    print("\n ¯\_(ツ)_/¯ ")
+def ascii_lines():
+    print("\n*************\n*************\n*************")
 
 
 #Purpose: creates a ??? using *
 #Parameters: none
 #Return: none
-def ASCII_word():
+def ascii_word():
     print("\n*******   ***  ***   ******   ********  ***  ***  ***  ***  ***\n********  ***  ***  ********  ********  **** ***  ***  ***  ***\n***  ***  ***  ***  ***  ***  ***       ********  ***  ***  ***\n***  ***  ***  ***  ***  ***  ***       ********  ***  ***  ***\n*******   ********  ***  ***  ******    *** ****  ***   ****** \n******    ********  ***  ***  ******    ***  ***  ***    ****  \n***       ***  ***  ***  ***  ***       ***  ***  ***  ***  ***\n***       ***  ***  ***  ***  ***       ***  ***  ***  ***  ***\n***       ***  ***  ********  ********  ***  ***  ***  ***  ***\n***       ***  ***   ******   ********  ***  ***  ***  ***  ***")
 
 
@@ -33,7 +26,7 @@ def ASCII_word():
 # Parameters: none
 # Return: none
 
-def ASCII_batman():
+def ascii_batman():
     print("\n                   ***********************\n               *********************************\n           *******   *     *       *    *    *******\n        *******   ***      **     **     ***   *******\n      ******   *****       *********      *****    *****\n    ******  ********       *********       ******    *****\n   ****   **********       *********       *********   *****\n  ****  **************    ***********     ************   ****\n ****  *************************************************  ****\n****  ***************************************************  ****\n****  ****************************************************  ****\n****  ****************************************************  ****\n ****  ***************************************************  ****\n  ****  *******     ****  ***********  ****     *********  ****\n   ****   *****      *      *******      *      ********  ****\n    *****   ****             *****             ******   *****\n      *****   **              ***              **    ******\n       ******   *              *              *   *******\n         *******                                *******\n            ********                         *******\n               *********************************\n                    ***********************")
 #found from https://www.asciiart.eu/comics/batman, author did not name themselves posted to this ascii art
 
@@ -44,22 +37,22 @@ def ASCII_batman():
 def main():
     while True:
         print("\nPlease choose an option:")
-        print("1. Output a circle, 2. set of lines, 3. an emoji, 4. a word, 5. batman symbol 6. exit")
+        print("1. a circle \n2. set of lines \n3. Phoenix \n4. batman symbol \n5. exit")
 
-        choice = input("Enter your choice (1-4): ")
+        choice =input("Enter your choice (1-5): ")
 
         if choice == '1':
-            ASCII_circle()
+            ascii_circle()
         elif choice == '2':
-            ASCII_lines()
+            ascii_lines()
         elif choice == '3':
-            ASCII_emoji()
+            ascii_word()
         elif choice == '4':
-            ASCII_word()
+            ascii_batman()
         elif choice == '5':
-            ASCII_batman()
-        elif choice == '6':
             print("Goodbye!")
             break
         else:
-            print("Invalid choice, please select a number between 1 and 4.")
+            print("invalid input")
+
+main()
